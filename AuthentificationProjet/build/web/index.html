@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href="css/styles.css" rel="stylesheet" />
+        
+    </head>
+    <body id="page-top">
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Contact Abraham</h2>
+                    <h3 class="section-subheading text-muted">Veuillez appeler le Mr</h3>
+                </div>
+
+                <form name="frm" method="POST" Action="http://localhost:8080/AuthentificationProjetOuz/Authen" >
+                    <div >
+                        <div class="form-group">
+                            <input class="form-control" name="email"  id="email" type="email" placeholder="Mail *"   />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" name="password"  id="password" type="password" placeholder="Mot de Pass*"  />
+
+                        </div>
+
+                        <div class="text-center" >
+                            <input type="hidden" name="hdnbt" />
+                            <button name="conn" value="conn" class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit" >Connexion</button>
+                            <button name="register" value="register" class="btn btn-secondary btn-xl text-uppercase" id="RegisterMessageButton" type="submit" >Inscription</button>
+                        </div>
+                       
+                    </div>
+                </form>
+            </div>
+        </section>
+    </body>
+</html>
